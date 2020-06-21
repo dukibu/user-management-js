@@ -1,0 +1,135 @@
+/* Color Palette */
+
+:root {
+  --light-gray: #dadce8;
+  --light-blue: #1b9ce2;
+}
+
+/* Basic */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Helper Classes */
+
+.success,
+.error {
+  color: #fff;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+
+.success {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
+}
+
+.not-valid {
+  color: red;
+}
+
+/* Register Form */
+
+#register-form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputField {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70px;
+}
+
+.inputField:last-of-type {
+  display: initial;
+}
+
+input[type="text"],
+select {
+  background-color: transparent;
+  border: 1px solid var(--light-blue);
+  padding: 8px;
+  border-radius: 1px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+  margin: 10px 0px;
+}
+
+.btn {
+  width: 150px;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  background-color: var(--light-blue);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.inputField.search {
+  display: flex;
+}
+
+/* Table */
+
+#table {
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+#table th,
+td {
+  padding: 10px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.7rem;
+}
+
+#table td {
+  font-size: 0.5rem;
+}
+
+#table td:last-child {
+  text-align: center;
+}
+
+#delete-item {
+  font-size: 1rem;
+  color: #000;
+  font-weight: bold;
+}

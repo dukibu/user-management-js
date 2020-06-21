@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>User Management</title>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <h1>User Management</h1>
+
+    <!-- Register Form -->
+    <form id="register-form">
+
+      <div class="inputField">
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName">
+        <div class="not-valid"></div>
+      </div>
+
+      <div class="inputField">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName">
+        <div class="not-valid"></div>
+      </div>
+
+      <div class="inputField">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <div class="not-valid"></div>
+      </div>
+
+      <div class="inputField">
+        <label for="membership">Membership</label>
+        <select name="membership" id="membership">
+          <option value="basic">Basic</option>
+          <option value="standard">Standard</option>
+          <option value="premium">Premium</option>
+        </select>
+
+      </div>
+
+      <div class="inputField">
+        <input type="radio" id="male" name="gender" value="male" checked="checked">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+
+      <input type="submit" value="Submit" class="btn">
+
+    </form> <!-- End of form id="register-form" -->
+
+    <!-- Filter Search -->
+    <div class="inputField search">
+      <input type="text" name="search" id="search" placeholder="Search">
+    </div>
+
+    <!-- User List -->
+    <table id="table">
+
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Membership</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Delete</th>
+      </tr>
+
+      <tbody id="user-list"></tbody>
+
+    </table>
+
+  </div> <!-- End of id="container" -->
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
